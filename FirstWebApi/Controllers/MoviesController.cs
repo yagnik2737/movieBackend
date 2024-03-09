@@ -37,7 +37,7 @@ namespace FirstWebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateMovies([FromQuery] MovieList std)
+        public async Task<IActionResult> UpdateMovies(MovieList std)
         {
             if (std.Id > 0)
             {
